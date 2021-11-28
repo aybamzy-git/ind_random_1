@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background: transparent;
+}
+header #name{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+header #name:hover{
+    letter-spacing: 2px;
+}
+header .dextop ul{
+    display: flex;
+}
+header .dextop ul li{
+    list-style: none;
+    margin: 0px 15px;
+}
+header .dextop ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+header .dextop ul li a:hover, header .dextop ul li a.active{
+    background: #ffffff;
+    color: #000000;
+}
+header .phone{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 35px;
+    right: 25px;
+    background: url(toogle.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    cursor: pointer;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(27, 27, 27);
+}
+.banner .front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    pointer-events: none;
+}
+.banner .describe{
+    padding: 0px 40px;
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.banner .describe h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+}
+.banner .describe p{
+    color: #fff;
+}
+.banner .describe a{
+    text-decoration: none;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    transition: 0.4s;
+}
+.banner .describe a:hover{
+    letter-spacing: 2px;
+}
+.banner .foot{
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    height: auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.banner .foot li{
+    list-style: none;
+    margin: 0px 20px;
+}
+.banner .foot li a{
+    filter: invert(1);
+    transform: scale(0.4);
+    display: inline-block;
+}
+.info1{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #9a7443;
+}
+.info1 .info{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    text-align: left;
+}
+.info1 .info h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+}
+.info1 .info p{
+    color: #fff;
+}
+.info1 figure{
+    width: 50%;
+    height: 100%;
+}
+.info1 figure img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    pointer-events: none;
+}
+.info2{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.info2 .title{
+    width: 100%;
+    text-align: center;
+}
+.info2 .title h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+}
+.info2 .card-wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+.info2 .card-wrap .card{
+    margin: 20px 30px;
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    opacity: 0.6;
+}
+.info2 .card-wrap .card:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+.info2 .card-wrap .card:nth-child(1){
+    background: rgb(75, 58, 92);
+}
+.info2 .card-wrap .card:nth-child(2){
+    background: rgb(27 20 22);
+}
+.info2 .card-wrap .card:nth-child(3){
+    background: rgb(237, 115, 85);
+}
+.info2 .card-wrap .card .imgBx{
+    position: relative;
+    height: 90%;
+    width: 100%;
+}
+.info2 .card-wrap .card .imgBx img{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+}
+.info2 .card-wrap .card .content{
+    width: 100%;
+    text-align: center;
+}
+.info2 .card-wrap .card .content h2{
+    color: #fff;
+}
+.banner2{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+}
+.banner2 .foot-banner{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+.banner2 .foot-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.banner2 .enter{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    color: #fff;
+    background: #4d66a5;
+}
+.banner2 .enter h2{
+    color: #fff;
+    text-align: center;
+}
+.banner2 .enter form p{
+    color: #fff;
+}
+.banner2 .enter form input{
+    color: #fff;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 60px;
+    border-bottom: 3px solid #fff;
+}
+.banner2 .enter form .submit-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+:-ms-input-placeholder {
+    color: rgb(255, 255, 255);
+  }
+::-ms-input-placeholder { 
+    color: rgb(255, 255, 255);
+  }
+.banner2 .enter form input[type="submit"]{
+    text-decoration: none;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    width: 150px;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.bottom{
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #002541;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom .foot-info{
+    width: auto;
+    padding: 7px 30px;
+}
+.bottom .foot-info h2{
+    font-weight: 600;
+    font-size: 21px;
+    color: #fff;
+}
+.bottom .foot-info p{
+    font-size: 15px;
+    color: #fff;
+    margin: -15px 0px;
+}
+.bottom .links{
+    width: auto;
+    height: auto;
+}
+.bottom .links ul{
+    filter: invert(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom .links ul li{
+    list-style-type: none;
+    margin: 0px 15px;
+}
+.bottom .links ul li p{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.bottom .links ul li a{
+    display: inline-block;
+    transform: scale(0.4);
+}
+@media (max-width: 700px){
+    header .phone{
+        opacity: 1;
+    }
+    header .dextop{
+        display: none;
+    }
+    .info1{
+        flex-direction: column;
+    }
+    .banner2 .enter{
+        padding: 30px;
+    }
+    .bottom .links ul li{
+        margin: 0px 0px;
+    }
+    .info1{
+        min-height: 100vh;
+    }
+    .info1 .info{
+        width: 100%;
+    }
+    .info1 figure{
+        margin-bottom: -10px;
+        width: 100%;
+    }
+    .info1 figure img{
+        position: relative;
+        width: 100%;
+    }
+    .info2 .card-wrap{
+        padding: 10px;
+    }
+    .banner2{
+        height: 145vh;
+        flex-direction: column;
+        background-color: #4d66a5;
+    }
+    .banner2 .enter{
+        width: 100%;
+    }
+    .banner2 .foot-banner{
+        width: 100%;
+    }
+}
+@media(max-width: 375px){
+    header .phone{
+        top: 30px;
+    }
+    .banner .describe h2{
+        font-size: 2em;
+    }
+    .banner .describe{
+        margin-bottom: 30px;
+    }
+    .bottom .foot-info{
+        padding: 8px 10px;
+        width: 50%;
+    }
+    .bottom .links ul li p{
+        font-size: 15px;
+    }
+    .bottom .foot-info h2{
+        font-size: 15px;
+    }
+    .bottom .foot-info p{
+        margin: 0;
+        font-size: 12px;
+    }
+    .info2 .card-wrap .card{
+        opacity: 1;
+        max-width: 300px;
+        height: 400px;
+    }
+}
+@media (max-width:310px){
+    .banner{
+        height: 120vh;
+    }
+    .banner .foot li{
+        margin: 0px 8px;
+    }
+    .bottom .foot-info{
+        padding: 80px 30px;
+    }
+    .bottom .links ul{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .info1{
+        height: 160vh;
+    }
+    .info2 .title h2{
+        font-size: 2em;
+    }
+}
+@media (max-width: 245px){
+    header{
+        padding: 16px;
+    }
+    header .phone{
+        top: 22px;
+        right: 35px;
+    }
+    .banner{
+        height: 125vh;
+    }
+    .banner .describe h2{
+        font-size: 1.5em;
+    }
+    .info2 .card-wrap .card .content h2{
+        font-size: 15px;
+    }
+}
+@media(max-height: 760px){
+    .banner{
+        height: 120vh;
+    }
+    .banner .foot{
+        bottom: 0px;
+    }
+}
